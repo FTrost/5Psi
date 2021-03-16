@@ -1,6 +1,7 @@
 # 5Psi
-repository of the five Psijik
+Repository of the five Psijik
 
+![](logo_5psi.png)
 
 ## Installing environment
 ```bash
