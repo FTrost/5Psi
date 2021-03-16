@@ -1,0 +1,11 @@
+name: 5Psi
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - jupyter
+  - numpy
+  - matplotlib
+  - pandas
+  - pre-commit
+  - nbstripout
