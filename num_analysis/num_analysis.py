@@ -1,19 +1,23 @@
 import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
 
-f = open("efield.t", "r")
-#arr = np.array(f.read())
+df = pd.read_csv('efield.t', delim_whitespace=True)
 
-x = list(f.read())
+x = df[df.columns].var() > 0.0001
 
-#print(f.read())
-#print(arr)
-#print(arr.dtype)
-print(x)
+df = df[df.columns[x]]
 
-data = np.array(x, dtype=np.float)
+#print(df)
 
-#print(arr)
+f = np.fft.fft(df['y'])
 
-#x = np.loadtxt('efield.t')
+#print(f)
 
-f.close()
+#plt.figure()
+#df['y'].plot()
+#f.plot()
+
+plt.plot(f)
+
+plt.show()
