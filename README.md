@@ -10,7 +10,7 @@ conda env create --file environment.yml
 
 ## Updating environment
 ```bash
-conda env update --prefix ./env --file environment.yml  --prune
+conda env update --file environment.yml  --prune
 ```
 
 ## Activating environment

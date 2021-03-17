@@ -3,7 +3,7 @@ channels:
   - defaults
   - conda-forge
 dependencies:
-  - jupyter
+  - notebook
   - numpy
   - matplotlib
   - pandas
