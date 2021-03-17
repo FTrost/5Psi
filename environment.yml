@@ -7,5 +7,6 @@ dependencies:
   - numpy
   - matplotlib
   - pandas
+  - seaborn
   - pre-commit
   - nbstripout
