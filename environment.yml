@@ -10,3 +10,6 @@ dependencies:
   - seaborn
   - pre-commit
   - nbstripout
+  - recommonmark
+  - sphinx
+  - flake8
