@@ -3,9 +3,13 @@ channels:
   - defaults
   - conda-forge
 dependencies:
-  - jupyter
+  - notebook
   - numpy
   - matplotlib
   - pandas
+  - seaborn
   - pre-commit
   - nbstripout
+  - recommonmark
+  - sphinx
+  - flake8
