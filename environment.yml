@@ -1,0 +1,15 @@
+name: 5Psi
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - notebook
+  - numpy
+  - matplotlib
+  - pandas
+  - seaborn
+  - pre-commit
+  - nbstripout
+  - recommonmark
+  - sphinx
+  - flake8
