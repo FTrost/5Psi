@@ -29,3 +29,20 @@ def dft(signal: pd.Series, times: pd.Series):
 
 	return F
 
+
+def acf(signal: pd.Series):
+	""" Calculating the (quasi) Autocorrelation Function of a series
+
+		Parameters:
+			signal (pandas.Series): Signal
+
+		Returns:
+			A: int, float, complex, ...
+	"""
+	A = 0
+
+	for i in np.arange(0,signal.size,1):
+		A += signal[i]*signal[0]
+
+	return A
+
