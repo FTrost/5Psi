@@ -4,7 +4,7 @@ Repository of the five Psijik
 ![](logo_5psi.png)
 
 ## Documentation
-![https://5psi.readthedocs.io/en/latest/index.html](https://5psi.readthedocs.io/en/latest/index.html)
+<https://5psi.readthedocs.io/en/latest/index.html>
 
 ## Installing environment
 ```bash
