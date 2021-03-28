@@ -1,7 +1,12 @@
+[![Documentation Status](https://readthedocs.org/projects/5psi/badge/?version=latest)](https://5psi.readthedocs.io/en/latest/?badge=latest)
+
 # 5Psi
 Repository of the five Psijik
 
 ![](logo_5psi.png)
+
+## Documentation
+<https://5psi.readthedocs.io/en/latest/index.html>
 
 ## Installing environment
 ```bash
