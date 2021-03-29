@@ -12,6 +12,10 @@ Welcome to 5Psi's documentation!
 
    modules
 
+Project data flow
+=================
+
+.. image:: flow_chart.png
 
 
 Indices and tables
