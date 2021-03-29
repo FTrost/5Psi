@@ -1,0 +1,8 @@
+numpy
+pandas
+seaborn
+pytest
+sphinx
+recommonmark
+matplotlib
+scipy
