@@ -12,8 +12,10 @@ Welcome to 5Psi's documentation!
 
    modules
 
-.. image:: flowchart.png
-   :width: 600
+Project data flow
+=================
+
+.. image:: flow_chart.png
 
 
 Indices and tables
