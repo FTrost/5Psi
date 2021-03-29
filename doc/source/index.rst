@@ -12,6 +12,8 @@ Welcome to 5Psi's documentation!
 
    modules
 
+.. image:: flowchart.png
+   :width: 600
 
 
 Indices and tables
