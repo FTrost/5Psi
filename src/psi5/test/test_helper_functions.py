@@ -8,7 +8,7 @@ Created on Mon Mar 29 15:31:01 2021
 import pytest
 import pandas as pd
 import numpy as np
-import helper_functions
+from psi5 import helper_functions
 
 
 @pytest.fixture(scope="module")
