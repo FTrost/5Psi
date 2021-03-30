@@ -22,10 +22,10 @@ def dft(signal: pd.Series, times: pd.Series):
         Returns:
             pandas.DataFrame: DFT
     """
-    freq = np.fft.fftfreq(times.size, times[1]-times[0])
+    freq = np.fft.fftfreq(times.size, times[1] - times[0])
     amp = np.fft.fft(signal)
 
-    DFT= pd.DataFrame({"freq": freq, "amp": amp})
+    DFT = pd.DataFrame({"freq": freq, "amp": amp})
 
     return DFT
 
@@ -39,8 +39,6 @@ def acf(signal: pd.Series):
     auto_corr = 0
 
     for i in np.arange(0, signal.size, 1):
-        auto_corr += signal[i]*signal[0]
+        auto_corr += signal[i] * signal[0]
 
     return auto_corr
-
-    return A
