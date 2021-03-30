@@ -21,29 +21,29 @@ def dft(signal: pd.Series, times: pd.Series):
             signal (pandas.Series): Signal
             times (pandas.Series): Time stamps of signal
 
-        Returns:
-            F: pandas.DataFrame
-    """
-    freq = np.fft.fftfreq(times.size, times[1]-times[0])
-    amp = np.fft.fft(signal)
 
-    F = pd.DataFrame({"freq" : freq, "amp" : amp})
+		Returns:
+			pandas.DataFrame: DFT
+	"""
+	freq = np.fft.fftfreq(times.size, times[1]-times[0])
+	amp = np.fft.fft(signal)
 
-    return F
+	DFT= pd.DataFrame({ "freq": freq, "amp": amp })
+
+	return DFT
 
 
 def acf(signal: pd.Series):
     """ Calculating the (quasi) Autocorrelation Function of a series
 
-        Parameters:
-            signal (pandas.Series): Signal
+		Returns:
+			int, float, complex, ...: auto_corr
+	"""
+	auto_corr = 0
 
-        Returns:
-            A: int, float, complex, ...
-    """
-    A = 0
+	for i in np.arange(0,signal.size,1):
+		auto_corr += signal[i]*signal[0]
 
-    for i in np.arange(0, signal.size, 1):
-        A += signal[i]*signal[0]
+	return auto_corr
 
     return A
