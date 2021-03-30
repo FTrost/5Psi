@@ -6,3 +6,4 @@ sphinx
 recommonmark
 matplotlib
 scipy
+flake8

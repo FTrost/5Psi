@@ -8,7 +8,7 @@ Created on Mon Mar 29 15:31:01 2021
 import pytest
 import pandas as pd
 import numpy as np
-import helper_functions
+from psi5 import helper_functions
 
 
 @pytest.fixture(scope="module")
@@ -23,8 +23,7 @@ def test_df(test_threshold):
     random_numbers_2 = np.random.randn(length)
     accepted = random_numbers_1 / random_numbers_1.var() * (2 * test_threshold)
     rejected = random_numbers_2 / random_numbers_2.var() * (0.5 * test_threshold)
-    df = pd.DataFrame({
-                       "A": np.ones(length),
+    df = pd.DataFrame({"A": np.ones(length),
                        "B": np.zeros(length),
                        "C": np.arange(length),
                        "D": accepted,
