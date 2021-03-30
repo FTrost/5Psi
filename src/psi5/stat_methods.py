@@ -23,7 +23,7 @@ def calc_pairwise_corr(data: pd.DataFrame):
     corr = data.corr()
     for i in range(len(corr)):
         for j in range(len(corr)):
-            if i>=j:
-                corr.iloc[i,j] = np.nan
+            if i >= j:
+                corr.iloc[i, j] = np.nan
     corr_list = corr.stack().sort_values(ascending=False).reset_index()
     return corr_list
