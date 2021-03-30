@@ -23,8 +23,7 @@ def test_df(test_threshold):
     random_numbers_2 = np.random.randn(length)
     accepted = random_numbers_1 / random_numbers_1.var() * (2 * test_threshold)
     rejected = random_numbers_2 / random_numbers_2.var() * (0.5 * test_threshold)
-    df = pd.DataFrame({
-                       "A": np.ones(length),
+    df = pd.DataFrame({"A": np.ones(length),
                        "B": np.zeros(length),
                        "C": np.arange(length),
                        "D": accepted,
