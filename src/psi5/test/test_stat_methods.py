@@ -25,4 +25,4 @@ answer_df = pd.DataFrame(
 
 
 def test_calc_pairwise_corr():
-    pd.testing.assert_frame_equal(sm.calc_pairwise_corr(test_df, answer_df))
+    pd.testing.assert_frame_equal(sm.calc_pairwise_corr(test_df), answer_df)
